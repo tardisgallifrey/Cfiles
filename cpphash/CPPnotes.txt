@@ -1,0 +1,19 @@
+When creating classes in a *.h file and then another in classname.cpp file,
+the following must take place:
+
+In header file:				In classname file:
+
+class myclass(){						
+
+//function prototype			//function prototype definition
+type myfunc(type value);		type myclass::myfunc(type value){
+					
+					}
+}
+
+The type (int, char, etc of the return value for the declaration must match
+in both the header and classname.cpp file.
+
+The type (int, char, etc of the parameters passed into the function,
+AND the prototype variable names must also match, and exist in 
+BOTH files.
