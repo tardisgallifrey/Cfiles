@@ -103,3 +103,64 @@ int index=myhash::Hash_index(name);
 
 }
 
+
+//Number of Items at a requested index into the Table
+int myhash::NumberItemsAtIndex(myhash::item* hTable, int index){
+
+   int count = 0;
+
+   if(hTable[index].name == "empty"){
+
+     return count;
+
+   }else{
+
+      count++;
+      myhash::item* Ptr = &hTable[index];
+      while(Ptr->next != NULL){
+
+         count++;
+         Ptr = Ptr->next;
+
+      }
+
+   }
+   return count;
+
+
+}
+
+
+
+//Find an item in the hash table
+void myhash::FindItem(myhash::item* hTable, std::string name){
+
+int index;
+
+index = myhash::Hash_index(name);
+bool foundName = false;
+std::string itemfound;
+
+myhash::item* Ptr = &hTable[index];
+
+while(Ptr != NULL){
+
+   if(Ptr->name == name){
+
+      foundName = true;
+      itemfound = Ptr->drink;
+
+   }
+   Ptr = Ptr->next;
+}
+
+if(foundName == true){
+
+   std::cout << "Favorite drink of " << name << " is: " << itemfound << "." << std::endl;
+
+}else{
+
+   std::cout << std::endl << name << "'s info was not found in the Hash Table." << std::endl;
+}
+
+}

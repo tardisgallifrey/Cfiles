@@ -36,6 +36,9 @@ void AddItem( item* hTable, std::string name, std::string drink );
 
 void PrintTable( item* hTable, int size );
 
+int NumberItemsAtIndex(item* hTable, int index);
+
+void FindItem(item* hTable, std::string name);
 };
 
 
