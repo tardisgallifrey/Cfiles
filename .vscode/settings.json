@@ -1,0 +1,9 @@
+{
+    "sqltools.connections": [
+        {
+            "driver": "MSSQL",
+            "name": "IJDB",
+            "previewLimit": 50
+        }
+    ]
+}
