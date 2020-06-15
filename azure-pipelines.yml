@@ -3,7 +3,7 @@ pool:
   vmImage: ubuntu-18.04
 
 #variables:
-#  system.debug: 'true'
+  system.debug: 'true'
 
 steps:
 - script: 'make hello'
@@ -13,6 +13,7 @@ steps:
   inputs:
     contents: '**/hello'
     targetFolder: '$(build.artifactStagingDirectory)'
+    echo '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts'
