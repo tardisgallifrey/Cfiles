@@ -11,7 +11,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy artifacts'
   inputs:
-    contents: '**/primes_in_range'
+    contents: '**/hello'
     targetFolder: '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
