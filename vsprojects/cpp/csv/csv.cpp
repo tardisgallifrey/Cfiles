@@ -4,40 +4,52 @@
 #include <string>
 
 
-int main(int argc, char* argv[] ){
+int main(int argc, char* argv[] )
+{
 
-int arg_num;
-std::string csv_buffer;
-std::string filename_buffer;
-std::ofstream file_handle;
+     int arg_num;
+     std::string csv_buffer;
+     std::string filename_buffer;
+     std::ofstream usr_text;
 
-if( argc == 2){
+     if( argc == 2)
+     {
+            //get command line arg (only 1)
+            std::istringstream arg_v(argv[1]);
 
-  std::istringstream arg_v(argv[1]);
-  arg_v >> arg_num;
-  std::cout << arg_num << std::endl;
+            //convert to number??
+            arg_v >> arg_num;
 
-  //string usr_string;
+            //print it out
+            std::cout << arg_num << std::endl;
 
-  //cout << "Enter a string: ";
+            //Ask the user for a name??
+            std::string usr_string;
+            std::cout << "Enter a string: ";
+            
+            getline(std::cin,usr_string); // gets string entered before user hits return
+            
+            //open the file for writing
+            usr_text.open("drinks.csv", std::ofstream::out | std::ofstream::app ); 
 
-  //getline(cin,usr_string); // gets string entered before user hits return
+            //if user string is 'good', then proceed
+            if(usr_text.good())
+            {
+                 usr_text << usr_string << std::endl; // write string to file with linefeed
+            }
+            else
+            {
+                 std::cout<<"Could not create file..."<< std::endl;
+            }
 
-  //ofstream usr_text("drinks.csv", ios::out ); 
+    }
+    else
+    {
 
-  //if(usr_text.good()) // make sure file was created ok
-  //{
-    //usr_text << usr_string << endl; // write string to file with linefeed
- 
-  //}else{
+        std::cout << "Usage: csv 'num' : where 'num' is" << std::endl;
+        std::cout << "           the number of records you desire." << std::endl;
 
-    // cout<<"Could not create file..."<<endl;
-  //}
-}else{
+    }
 
- std::cout << "Usage: csv 'num' : where 'num' is" << std::endl;
- std::cout << "           the number of records you desire." << std::endl;
-
-}
 return 0;
 }
