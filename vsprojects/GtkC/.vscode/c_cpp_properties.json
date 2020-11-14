@@ -3,7 +3,13 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/include",
+                "/usr/include/gtk-3.0",
+                "/usr/include/gtk",
+                "/usr/include/gdk",
+                "/usr/include/GL",
+                "/usr/include/glib-2.0"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

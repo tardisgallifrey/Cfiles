@@ -1,1 +1,2 @@
-gcc -Wall helloworld.c -lgtk -lgdk -lgdk_pixbuf -lpango -lgobject -lgmodule -lglib -lX11 -lXext -lm
+#!/bin/bash
+gcc `pkg-config --cflags gtk+-3.0` $1.c `pkg-config --libs gtk+-3.0`
