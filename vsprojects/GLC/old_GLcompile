@@ -1,0 +1,8 @@
+#!/bin/bash
+
+gcc $1.c -lGL -lGLU -lglut $2 $3 $4 $5 $6
+
+if [ -f "./a.out" ]; then
+    mv ./a.out $1
+fi
+
