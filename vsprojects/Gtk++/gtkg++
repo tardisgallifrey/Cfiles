@@ -1,0 +1,4 @@
+g++ $1.cpp `pkg-config gtkmm-3.0 --cflags --libs`
+if [ -f "./a.out" ]; then
+    mv ./a.out $1
+fi
