@@ -1,5 +1,11 @@
 #include <gtk/gtk.h>
 
+//According to a StackOverflow post, the way to 
+//get rid of the gtk_alignment-new would be 
+//to add a gtk_grid to the window then add the buttons to the grid.
+
+//Then direclty set the halign and valign properties of the button
+//before adding them directly to the window.
 
 //This is the function to create the pixbuf.
 // It uses Gdk, but is not part of Gdk
