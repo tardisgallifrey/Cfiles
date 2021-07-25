@@ -13,6 +13,7 @@ GLvoid DrawGLScene(GLvoid);
 GLvoid ReSizeGLScene(int Width, int Height);
 GLfloat Xconvert(int X);
 GLfloat Yconvert(int Y);
+GLvoid mouseHandler(int x, int y);
 
 /*
 This struct is needed since I can't 
@@ -27,6 +28,8 @@ to be of void type
 struct screensize {
     int width;
     int height;
+    int x;
+    int y;
 } Screen, XYselect;
 
  
@@ -79,6 +82,7 @@ int main(int argc, char** argv)
  //in addition to the callback function
  glutReshapeFunc(ReSizeGLScene);
  
+ glutPassiveMotionFunc( mouseHandler );
  //Makes the world go round
  glutMainLoop();
  
@@ -155,6 +159,14 @@ GLvoid DrawGLScene(GLvoid)
         glVertex2f(Xconvert(0), Yconvert(0));
         glVertex2f(Xconvert(Screen.width), Yconvert(Screen.height));   
     glEnd();
+    
+
+    glBegin(GL_TRIANGLES);
+        glVertex2f(Xconvert(100), Yconvert(100));
+        glVertex2f(Xconvert(100) + 0.1f, Yconvert(100));
+        glVertex2f(Xconvert(100), Yconvert(100) + 0.1f);
+    glEnd();
+
     glutSwapBuffers();
 }
 
@@ -170,4 +182,10 @@ GLfloat Yconvert(int Y)
     return  2.0f - ( 2.0f / (GLfloat) Screen.height  * myY);
 }
 
+GLvoid mouseHandler(int x, int y)
+{
+    XYselect.x = x;
+    XYselect.y = y;
+    printf("%d , %d\n", XYselect.x, XYselect.y);
+}
 
