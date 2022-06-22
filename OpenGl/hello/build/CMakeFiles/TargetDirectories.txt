@@ -1,0 +1,3 @@
+/home/tardis1/Cfiles/OpenGl/hello/build/CMakeFiles/OpenGLHello.dir
+/home/tardis1/Cfiles/OpenGl/hello/build/CMakeFiles/edit_cache.dir
+/home/tardis1/Cfiles/OpenGl/hello/build/CMakeFiles/rebuild_cache.dir

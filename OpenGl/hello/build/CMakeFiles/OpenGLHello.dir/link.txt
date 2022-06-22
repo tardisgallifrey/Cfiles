@@ -1,0 +1,1 @@
+/usr/bin/cc -lGL -lGLU -lglut CMakeFiles/OpenGLHello.dir/openglhello.c.o -o OpenGLHello 
