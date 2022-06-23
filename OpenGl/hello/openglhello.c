@@ -45,7 +45,7 @@
  * This is a simple, introductory OpenGL program.
  */
 #include <GL/freeglut.h>
-#include <
+#include <stdio.h>
 #include <stdlib.h>
 
 void display(void)
@@ -88,15 +88,15 @@ void init (void)
  * Register callback function to display graphics.
  * Enter main loop and process events.
  */
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
    glutInit(&argc, argv);
-   glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
-   glutInitWindowSize (512, 512); 
-   glutInitWindowPosition (100, 100);
-   glutCreateWindow ("hello");
-   init ();
-   glutDisplayFunc(display); 
+   glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+   glutInitWindowSize(512, 512);
+   glutInitWindowPosition(100, 100);
+   glutCreateWindow("hello");
+   init();
+   glutDisplayFunc(display);
    glutMainLoop();
-   return 0;   /* ANSI C requires main to return int. */
+   return 0; /* ANSI C requires main to return int. */
 }
