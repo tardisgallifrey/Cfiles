@@ -1,0 +1,3 @@
+/home/tardis1/Cfiles/OpenGl/redbook2/build/CMakeFiles/redbookex2.dir
+/home/tardis1/Cfiles/OpenGl/redbook2/build/CMakeFiles/edit_cache.dir
+/home/tardis1/Cfiles/OpenGl/redbook2/build/CMakeFiles/rebuild_cache.dir
