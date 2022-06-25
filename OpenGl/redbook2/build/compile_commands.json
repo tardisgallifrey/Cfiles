@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/tardis1/Cfiles/OpenGl/redbook2/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/redbookex2.dir/redbookex2.c.o -c /home/tardis1/Cfiles/OpenGl/redbook2/redbookex2.c",
-  "file": "/home/tardis1/Cfiles/OpenGl/redbook2/redbookex2.c"
-}
-]
