@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/tardis1/Cfiles/OpenGl/redbook4/build",
+  "command": "/usr/bin/gcc   -O3 -DNDEBUG -o CMakeFiles/redbookex4.dir/redbookex4.c.o -c /home/tardis1/Cfiles/OpenGl/redbook4/redbookex4.c",
+  "file": "/home/tardis1/Cfiles/OpenGl/redbook4/redbookex4.c"
+}
+]
