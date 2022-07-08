@@ -1,0 +1,1 @@
+/usr/bin/gcc -O3 -DNDEBUG CMakeFiles/redbookex4.dir/redbookex4.c.o -o redbookex4  -lGL -lGLU -lGLEW -lGLX -lglut -lm 
