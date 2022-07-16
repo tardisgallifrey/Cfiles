@@ -1,0 +1,3 @@
+/home/tardis1/Cfiles/xlib/OpenGLbasic/build/CMakeFiles/basic_window.dir
+/home/tardis1/Cfiles/xlib/OpenGLbasic/build/CMakeFiles/edit_cache.dir
+/home/tardis1/Cfiles/xlib/OpenGLbasic/build/CMakeFiles/rebuild_cache.dir
