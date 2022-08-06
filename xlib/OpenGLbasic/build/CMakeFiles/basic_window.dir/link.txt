@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/basic_window.dir/fifthx.c.o -o basic_window  -lX11 -lGL -lGLU 

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#This script creates OpenGL with X11 project
+#from files in this folder
+
+mkdir $1
+mkdir $1/build
+cp sample.c $1
+cp CMakeLists.txt $1
+cp version.h.in $1
+
+echo "Your project is ready."
+echo "Don't forget to alter and correct 'CMakeLists.txt' and sample.c "
+echo "to match your project needs and names."
