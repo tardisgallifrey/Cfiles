@@ -1,0 +1,3 @@
+/home/tardis1/Cfiles/server/build/CMakeFiles/webserver.dir
+/home/tardis1/Cfiles/server/build/CMakeFiles/edit_cache.dir
+/home/tardis1/Cfiles/server/build/CMakeFiles/rebuild_cache.dir

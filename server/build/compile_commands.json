@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/tardis1/Cfiles/server/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/webserver.dir/http.c.o -c /home/tardis1/Cfiles/server/http.c",
+  "file": "/home/tardis1/Cfiles/server/http.c"
+},
+{
+  "directory": "/home/tardis1/Cfiles/server/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/webserver.dir/webserver.c.o -c /home/tardis1/Cfiles/server/webserver.c",
+  "file": "/home/tardis1/Cfiles/server/webserver.c"
+}
+]
