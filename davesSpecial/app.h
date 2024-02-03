@@ -11,7 +11,10 @@ struct Record {
    long hash;
 };
 
+void splashScreen();
+int init();
 int menu();
 void addEntry();
+int saveRecord(struct Record saveRecord);
 
 #endif //DAVESSPECIAL_APP_H

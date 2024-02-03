@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "app.h"
 
 
@@ -7,10 +8,12 @@ int main() {
    int menuChoice;
 
    //initialize
-   init();
-
-   //splash
-   splashScreen();
+   if(init()){
+      splashScreen();
+   }else{
+      printf("\nSomething didn't work right.\n");
+      exit(0);
+   }
 
    //menu
    do{

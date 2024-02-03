@@ -8,4 +8,5 @@ add_executable(davesSpecial app.c
         splash.c
         menu.c
         addentry.c
-        init.c)
+        init.c
+        saverecord.c)
