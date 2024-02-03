@@ -24,10 +24,12 @@ int init(){
    flag = fwrite(&initRecord, sizeof(struct Record), 1,
                  outfile);
    if (flag) {
+      //good write
       fclose(outfile);
       return 1;
    }
    else{
+      //bad write
       fclose(outfile);
       return -1;
    }
