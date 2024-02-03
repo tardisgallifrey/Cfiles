@@ -3,4 +3,9 @@ project(davesSpecial C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(davesSpecial main.c)
+add_executable(davesSpecial app.c
+        app.h
+        splash.c
+        menu.c
+        addentry.c
+        init.c)
