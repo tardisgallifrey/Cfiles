@@ -16,6 +16,7 @@ int init(){
       exit(1);
    }
 
+   //create record 0
    struct Record initRecord = { 0, "rohan", "sharma", 0 };
 
    // write struct to file
